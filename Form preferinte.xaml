@@ -1,0 +1,100 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Form_preferinte" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ufa="clr-namespace:UiPath.Form.Activities;assembly=UiPath.Form.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Output" Type="OutArgument(scg:Dictionary(x:String, x:String))" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>755.2,436.8</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Form_preferinte_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Form.Activities</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Form.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Form_preferinte" sap:VirtualizedContainerService.HintSize="453.6,372" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="userInput" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ufa:FormActivity CreateFormActivityFileName="{x:Null}" CreateFormActivityFilePath="{x:Null}" Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormTitle="{x:Null}" IconPath="{x:Null}" LocalCSSFilePath="{x:Null}" SelectedButton="{x:Null}" TimeoutInSeconds="{x:Null}" WindowPositionLeft="{x:Null}" WindowPositionTop="{x:Null}" CreateFormId="67278d68-e85e-4650-b898-d7da54d4d50b" DisableMaximizeButton="False" DisableMinimizeButton="False" DisableSanitize="False" DisplayName="Create Form User Preferences" FormFieldsOutputData="[userInput]" FormHeight="550" FormSchema="%[{&quot;label&quot;:&quot;Judet, Oras*&quot;,&quot;placeholder&quot;:&quot;ex: Ilfov, București&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;oras&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Zona&quot;,&quot;placeholder&quot;:&quot;(opțional)&quot;,&quot;tableView&quot;:true,&quot;key&quot;:&quot;zona&quot;,&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true},{&quot;label&quot;:&quot;Tip imobiliar*&quot;,&quot;widget&quot;:&quot;choicesjs&quot;,&quot;uniqueOptions&quot;:true,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;Apartamente&quot;,&quot;value&quot;:&quot;Apartamente&quot;},{&quot;label&quot;:&quot;Case/Vile&quot;,&quot;value&quot;:&quot;Case / Vile&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;tipImobiliar&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true,&quot;defaultValue&quot;:&quot;Apartamente&quot;},{&quot;label&quot;:&quot;Scop*&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;De vanzare&quot;,&quot;value&quot;:&quot;De vânzare&quot;},{&quot;label&quot;:&quot;De inchiriat&quot;,&quot;value&quot;:&quot;De închiriat&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;scop&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true,&quot;defaultValue&quot;:&quot;De închiriat&quot;},{&quot;label&quot;:&quot;Numar Camere*&quot;,&quot;tableView&quot;:true,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;1&quot;,&quot;value&quot;:&quot;1&quot;},{&quot;label&quot;:&quot;2&quot;,&quot;value&quot;:&quot;2&quot;},{&quot;label&quot;:&quot;3&quot;,&quot;value&quot;:&quot;3&quot;},{&quot;label&quot;:&quot;4+&quot;,&quot;value&quot;:&quot;4&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;numarCamere&quot;,&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true,&quot;defaultValue&quot;:2},{&quot;label&quot;:&quot;Pret Maxim inchiriere&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:&quot;Oricât&quot;,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;Oricât&quot;,&quot;value&quot;:&quot;Oricât&quot;},{&quot;label&quot;:&quot;100 €&quot;,&quot;value&quot;:&quot;100 €&quot;},{&quot;label&quot;:&quot;150 €&quot;,&quot;value&quot;:&quot;150 €&quot;},{&quot;label&quot;:&quot;200 €&quot;,&quot;value&quot;:&quot;200 €&quot;},{&quot;label&quot;:&quot;250 €&quot;,&quot;value&quot;:&quot;250 €&quot;},{&quot;label&quot;:&quot;300 €&quot;,&quot;value&quot;:&quot;300 €&quot;},{&quot;label&quot;:&quot;350 €&quot;,&quot;value&quot;:&quot;350 €&quot;},{&quot;label&quot;:&quot;400 €&quot;,&quot;value&quot;:&quot;400 €&quot;},{&quot;label&quot;:&quot;450 €&quot;,&quot;value&quot;:&quot;450 €&quot;},{&quot;label&quot;:&quot;500 €&quot;,&quot;value&quot;:&quot;500 €&quot;},{&quot;label&quot;:&quot;550 €&quot;,&quot;value&quot;:&quot;550 €&quot;},{&quot;label&quot;:&quot;600 €&quot;,&quot;value&quot;:&quot;600 €&quot;},{&quot;label&quot;:&quot;650 €&quot;,&quot;value&quot;:&quot;650 €&quot;},{&quot;label&quot;:&quot;700 €&quot;,&quot;value&quot;:&quot;700 €&quot;},{&quot;label&quot;:&quot;750 €&quot;,&quot;value&quot;:&quot;750 €&quot;},{&quot;label&quot;:&quot;800 €&quot;,&quot;value&quot;:&quot;800 €&quot;},{&quot;label&quot;:&quot;850 €&quot;,&quot;value&quot;:&quot;850 €&quot;},{&quot;label&quot;:&quot;900 €&quot;,&quot;value&quot;:&quot;900 €&quot;},{&quot;label&quot;:&quot;950 €&quot;,&quot;value&quot;:&quot;950 €&quot;},{&quot;label&quot;:&quot;1.000 €&quot;,&quot;value&quot;:&quot;1.000 €&quot;},{&quot;label&quot;:&quot;1.100 €&quot;,&quot;value&quot;:&quot;1.100 €&quot;},{&quot;label&quot;:&quot;1.200 €&quot;,&quot;value&quot;:&quot;1.200 €&quot;},{&quot;label&quot;:&quot;1.300 €&quot;,&quot;value&quot;:&quot;1.300 €&quot;},{&quot;label&quot;:&quot;1.400 €&quot;,&quot;value&quot;:&quot;1.400 €&quot;},{&quot;label&quot;:&quot;1.600 €&quot;,&quot;value&quot;:&quot;1.600 €&quot;},{&quot;label&quot;:&quot;1.800 €&quot;,&quot;value&quot;:&quot;1.800 €&quot;},{&quot;label&quot;:&quot;2.000 €&quot;,&quot;value&quot;:&quot;2.000 €&quot;},{&quot;label&quot;:&quot;2.500 €&quot;,&quot;value&quot;:&quot;2.500 €&quot;},{&quot;label&quot;:&quot;3.000 €&quot;,&quot;value&quot;:&quot;3.000 €&quot;},{&quot;label&quot;:&quot;3.500 €&quot;,&quot;value&quot;:&quot;3.500 €&quot;},{&quot;label&quot;:&quot;4.000 €&quot;,&quot;value&quot;:&quot;4.000 €&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;pretMaximInchiriere&quot;,&quot;conditional&quot;:{&quot;show&quot;:true,&quot;when&quot;:&quot;scop&quot;,&quot;eq&quot;:&quot;De închiriat&quot;},&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;label&quot;:&quot;Pret Maxim vanzare&quot;,&quot;tableView&quot;:true,&quot;defaultValue&quot;:&quot;Oricât&quot;,&quot;data&quot;:{&quot;values&quot;:[{&quot;label&quot;:&quot;Oricât&quot;,&quot;value&quot;:&quot;Oricât&quot;},{&quot;label&quot;:&quot;10.000 €&quot;,&quot;value&quot;:&quot;10.000 €&quot;},{&quot;label&quot;:&quot;20.000 €&quot;,&quot;value&quot;:&quot;20.000 €&quot;},{&quot;label&quot;:&quot;25.000 €&quot;,&quot;value&quot;:&quot;25.000 €&quot;},{&quot;label&quot;:&quot;30.000 €&quot;,&quot;value&quot;:&quot;30.000 €&quot;},{&quot;label&quot;:&quot;35.000 €&quot;,&quot;value&quot;:&quot;35.000 €&quot;},{&quot;label&quot;:&quot;40.000 €&quot;,&quot;value&quot;:&quot;40.000 €&quot;},{&quot;label&quot;:&quot;45.000 €&quot;,&quot;value&quot;:&quot;45.000 €&quot;},{&quot;label&quot;:&quot;50.000 €&quot;,&quot;value&quot;:&quot;50.000 €&quot;},{&quot;label&quot;:&quot;55.000 €&quot;,&quot;value&quot;:&quot;55.000 €&quot;},{&quot;label&quot;:&quot;60.000 €&quot;,&quot;value&quot;:&quot;60.000 €&quot;},{&quot;label&quot;:&quot;65.000 €&quot;,&quot;value&quot;:&quot;65.000 €&quot;},{&quot;label&quot;:&quot;70.000 €&quot;,&quot;value&quot;:&quot;70.000 €&quot;},{&quot;label&quot;:&quot;75.000 €&quot;,&quot;value&quot;:&quot;75.000 €&quot;},{&quot;label&quot;:&quot;80.000 €&quot;,&quot;value&quot;:&quot;80.000 €&quot;},{&quot;label&quot;:&quot;85.000 €&quot;,&quot;value&quot;:&quot;85.000 €&quot;},{&quot;label&quot;:&quot;90.000 €&quot;,&quot;value&quot;:&quot;90.000 €&quot;},{&quot;label&quot;:&quot;100.000 €&quot;,&quot;value&quot;:&quot;100.000 €&quot;},{&quot;label&quot;:&quot;110.000 €&quot;,&quot;value&quot;:&quot;110.000 €&quot;},{&quot;label&quot;:&quot;120.000 €&quot;,&quot;value&quot;:&quot;120.000 €&quot;},{&quot;label&quot;:&quot;130.000 €&quot;,&quot;value&quot;:&quot;130.000 €&quot;},{&quot;label&quot;:&quot;140.000 €&quot;,&quot;value&quot;:&quot;140.000 €&quot;},{&quot;label&quot;:&quot;160.000 €&quot;,&quot;value&quot;:&quot;160.000 €&quot;},{&quot;label&quot;:&quot;180.000 €&quot;,&quot;value&quot;:&quot;180.000 €&quot;},{&quot;label&quot;:&quot;200.000 €&quot;,&quot;value&quot;:&quot;200.000 €&quot;},{&quot;label&quot;:&quot;220.000 €&quot;,&quot;value&quot;:&quot;220.000 €&quot;},{&quot;label&quot;:&quot;250.000 €&quot;,&quot;value&quot;:&quot;250.000 €&quot;},{&quot;label&quot;:&quot;300.000 €&quot;,&quot;value&quot;:&quot;300.000 €&quot;},{&quot;label&quot;:&quot;350.000 €&quot;,&quot;value&quot;:&quot;350.000 €&quot;},{&quot;label&quot;:&quot;400.000 €&quot;,&quot;value&quot;:&quot;400.000 €&quot;}]},&quot;validate&quot;:{&quot;onlyAvailableItems&quot;:false},&quot;key&quot;:&quot;pretMaximVanzare&quot;,&quot;conditional&quot;:{&quot;show&quot;:true,&quot;when&quot;:&quot;scop&quot;,&quot;eq&quot;:&quot;De vânzare&quot;},&quot;type&quot;:&quot;select&quot;,&quot;indexeddb&quot;:{&quot;filter&quot;:{}},&quot;input&quot;:true},{&quot;type&quot;:&quot;button&quot;,&quot;label&quot;:&quot;Submit&quot;,&quot;key&quot;:&quot;submit&quot;,&quot;disableOnInvalid&quot;:true,&quot;input&quot;:true,&quot;tableView&quot;:false}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;../../assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;../../assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;../../assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="800" GenerateInputFields="True" sap:VirtualizedContainerService.HintSize="412,279.2" sap2010:WorkflowViewState.IdRef="FormActivity_1" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="False" StartAsMinimized="False">
+      <ufa:FormActivity.Body>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,152.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:DeserializeJson x:TypeArguments="scg:Dictionary(x:String, x:String)" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[Output]" JsonString="[userInput]" />
+          </Sequence>
+        </ActivityAction>
+      </ufa:FormActivity.Body>
+      <ufa:FormActivity.DelayBody>
+        <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+          <Delay Duration="00:00:00.2500000" sap2010:WorkflowViewState.IdRef="Delay_1" />
+        </ActivityAction>
+      </ufa:FormActivity.DelayBody>
+      <ufa:FormActivity.FormFieldsCollection>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ufa:FormActivity.FormFieldsCollection>
+    </ufa:FormActivity>
+  </Sequence>
+</Activity>
